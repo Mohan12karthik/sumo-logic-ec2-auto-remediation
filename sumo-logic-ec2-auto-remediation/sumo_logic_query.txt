@@ -1,0 +1,9 @@
+_sourceCategory="webapp/flask"
+| json "endpoint", "response_time_ms"
+| where endpoint="/api/data"
+| where !isEmpty(response_time_ms)
+| num(response_time_ms)
+| where response_time_ms > 3000
+| timeslice 10m
+| count as error_count by _timeslice
+| where error_count > 5
