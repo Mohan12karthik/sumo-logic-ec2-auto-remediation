@@ -146,6 +146,8 @@ terraform validate
 terraform apply
 ```
 
+---
+
 # Testing the System
 
 ## 1) Test the Web App
@@ -185,6 +187,7 @@ Run the scheduled search manually to confirm matches
 
 - SNS topic sends an email when Lambda runs successfully.
 
+---
 
 ## Screenshots (Proof)
 
@@ -214,6 +217,7 @@ Run the scheduled search manually to confirm matches
 ![SNS Notification](sumo-logic-ec2-auto-remediation/screenshots/SNS-notification.png)
 
 
+---
 
 # Troubleshooting Notes
 - Issue: EC2 web app stops after reboot
@@ -233,6 +237,7 @@ sudo systemctl enable webapp
 sudo systemctl start webapp
 sudo systemctl status webapp
 ```
+---
 
 # Deliverables Included
 
@@ -248,6 +253,7 @@ sudo systemctl status webapp
 
 ✅ Recording links
 
+---
 # Author
 
 `Mohan Karthik Vijayakumar`
