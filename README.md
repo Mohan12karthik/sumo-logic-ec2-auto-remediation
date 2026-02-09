@@ -185,6 +185,36 @@ Run the scheduled search manually to confirm matches
 
 - SNS topic sends an email when Lambda runs successfully.
 
+
+## Screenshots (Proof)
+
+### 1) Web App Running + API Calls
+![Web App API Calls](sumo-logic-ec2-auto-remediation/screenshots/web-app-apicalls.png)
+
+### 2) Web App Logs Showing Response Time
+![Web App Logs](sumo-logic-ec2-auto-remediation/screenshots/web-app-logs.png)
+
+### 3) Sumo Logic Collector Configured
+![Sumo Collector](sumo-logic-ec2-auto-remediation/screenshots/sumo-logic-collector.png)
+
+### 4) Sumo Logic Query (Response Time > 3s)
+![Sumo Query 1](sumo-logic-ec2-auto-remediation/screenshots/sumo-logic-query-1.png)
+![Sumo Query 2](sumo-logic-ec2-auto-remediation/screenshots/sumo-logic-query-2.png)
+
+### 5) Sumo Logic Webhook Alert Setup
+![Sumo Webhook](sumo-logic-ec2-auto-remediation/screenshots/sumo-logic-webhook.png)
+
+### 6) Sumo Logic Connection to API Gateway
+![Sumo Lambda Connection](sumo-logic-ec2-auto-remediation/screenshots/sumo-logic-connection-lambda.png)
+
+### 7) API Gateway CloudWatch Logs (Webhook Received)
+![API Gateway Logs](sumo-logic-ec2-auto-remediation/screenshots/APIGateway-log-stream.png)
+
+### 8) SNS Notification Email Received
+![SNS Notification](sumo-logic-ec2-auto-remediation/screenshots/SNS-notification.png)
+
+
+
 # Troubleshooting Notes
 - Issue: EC2 web app stops after reboot
 
